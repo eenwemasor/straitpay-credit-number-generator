@@ -37,8 +37,14 @@ There are 2 routes exposed to genate new credit number and to validate an existi
     body: {
         cardNumber: "string | required"
     }
-    sample response: {
-        "card": "8348775527",
-        "message": "Credit number generated successfully"
+    sample valid response: {
+        "status": "Valid",
+        "card": "3237255744",
+        "message": "Card number is valid"
+    }
+    sample invalid response: {
+        "status": "Invalid",
+        "card": "3937255744",
+        "message": "Card number is not valid"
     }
 ```
